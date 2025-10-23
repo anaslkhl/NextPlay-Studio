@@ -1,12 +1,14 @@
-body{
+@media (max-width: 600px){
+    body{
     background-color: #491463 ;
-    width: 100%;
-    height: 100vh;
 }
+
+ 
 .box{
     position: relative;
 }
-.titre-principal,titre-secondaire{
+.titre-principal{
+    color: white;
     height: 20%;
     width: 100%;
     font-family:Italianno;
@@ -16,6 +18,13 @@ body{
     text-shadow: rgb(103, 4, 189) 3px 2px 1px 5px;
     justify-content: center;
     display: flex;
+}
+.titre-secondaire{
+    color: aliceblue;
+    font-family:Italianno;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: 400;
 }
 .formul{
     
@@ -41,6 +50,24 @@ body{
 .label-and-input{
     margin-right: 10 px;
 }
+h2{
+    text-align: center;
+}
+.imageee{
+display: flex;
+justify-content: center;
+margin-bottom: 60px;
+}
+.imagee{
+    width: 210px;
+    height: 200px;
+}
+.btnn{
+display: flex;
+justify-content: space-evenly;
+padding: 15px;
+
+}
 
 label{
     margin-right: 10px;
@@ -53,10 +80,15 @@ label{
 
 .mini-box{
     display: flex;
+    justify-content: center;
     width: 100%;
-    height: auto;
-    align-items:center ;
 }
+.box-box{
+text-align: center;
+
+}
+
+
 .img-2{
     left: 150px;
     top: 1px;
@@ -83,7 +115,6 @@ label{
     height: 100px;
 }
 .img-6{
-     position: relative;
     width: 120px;
     height: 100px;
 }
@@ -111,8 +142,8 @@ label{
     padding: 3px;
     border-radius: 50%;
     background-color: #8e5ca9;
-}
-/* sign-in */
+} 
+ sign-in 
 .formulaire{
     gap: 30px;
     display: flex;
@@ -143,8 +174,57 @@ label{
     align-items: center;
     width: 200px;
     margin: 5px;
+    margin-bottom: 50px;
 }
-.div img-2-1{
-    width: 30px;
-    height: 100px;
+/* section{
+    gap: 20px;
+    
+} */
+#img-2-1 img{
+      
+    width: 200px;
+    height: 150px;
+    justify-content: center;
 }
+.titre-secondaire3{
+    height: 10%;
+    width: 100%;
+    font-family:Italianno;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: 400;
+    text-shadow: 10px 2px #503e69;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+.btn-1{
+    position: absolute;
+    left: 140px;
+
+}
+/* la position du deux buttom dans le meme temps */
+ .btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+section {
+    gap: 200px;
+}
+
+} 
+
+
+
+@media (min-width: 601px){
+    body{
+    background-color: #491463 ;
+}
+
+}
+
+
+
+
