@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 nav{
@@ -22,18 +23,16 @@ nav ul{
 }
 
 .hero{
-    position:absolute;
     top:0;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     background: #210736;
     background: linear-gradient(0deg, #210736 0%, #5F149C 100%);
-    flex-wrap: wrap-re;
     z-index: -1;
     padding-top: 100px;
+    margin-top: -160px;
     justify-content: center;
-
 }
 
 .hero-img{
@@ -64,12 +63,95 @@ nav ul{
     color:white;
 }
 
-.hero-headline button{
-    width: 250px;
-    height: 80px;
-    border:none;
+.cta-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
     border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "logo-dis newsletter newsletter"
+        "logo-dis navigation contact-us";
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.newsletter {
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 600px;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter-input {
+    flex-grow: 1;
+    min-width: 250px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.section-title {
     font-size: 2em;
-    color: #210736;
-    background-color: #F132FF;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.logo-dis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    height: 100%;
+}
+
+.logo-dis p{
+    font-size: 2rem;
+    width:75%;
+    text-align: center;
+}
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-footer h2{
+    grid-area: title;
+    font-size: 4rem;
+}
+
+.container-footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    max-height: 300px;
+    padding: 20px;
+}
+
+.container-footer li{
+    margin: 0 90px;
+    font-size: 2rem;
 }
