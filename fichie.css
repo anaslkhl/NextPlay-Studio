@@ -2,17 +2,36 @@
 
 .image{
     border-radius: 20px;
+box-shadow: 10px 10px 5px 1px;
+
 }
+.hover :hover{
+background-color: #aa08d7;
+color: black;
+cursor: pointer;
+}
+p{
+    color: wheat;
+}
+/* main>div>h3 :hover{
+background-color: #aa08d7;
+color: black;
+cursor: pointer;
+} */
+
 
 /* phone */
-@media screen and (max-width:667px){
+@media (max-width:667px){
     body{
-background-color: #8d1398;
+background-color: #520075;
+}
+h4{
+    display: inline-block;
 }
 image{
     width: 200px;
     height: 200px;
-        border-radius: 20px;
+    border-radius: 20px;
 
 }
 
@@ -37,10 +56,29 @@ image{
     display: flex;
     justify-self: center;
     border-radius: 20px;
+    /* background: #b3adad;
+    background: linear-gradient(
+      90deg,
+      rgb(21, 21, 21) 0%,
+      rgb(105, 104, 104) 25%,
+      rgb(129, 128, 128) 40%,
+      rgba(255, 255, 255, 1) 50%,
+      rgb(21, 21, 21) 60%,
+      rgb(105, 104, 104) 75%,
+      rgb(129, 128, 128) 100%
+
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
    
 }
 .aligne{
     text-align: center;
+}
+.hover :hover{
+background-color: #aa08d7;
+cursor: pointer;
+
 }
 
 }
@@ -49,9 +87,9 @@ image{
 /* tablet */
 @media (min-width:668px) and (max-width:800px){
     body{
-background-color: #8d1398;
-/* overflow: hidden; */
+background-color: #520075;
 }
+
 #aside-free{
     position: relative;
     bottom: 60px;
@@ -77,7 +115,10 @@ background-color: #8d1398;
     justify-content: space-between;
     padding: 0px 30px 0px 10px;
     gap: 90px;
+        text-align: center;
+
 }
+
 .reverse{
     display: flex;
     justify-content: center;
@@ -91,8 +132,9 @@ background-color: #8d1398;
 
 }
 h4{
+    display: inline-block;
     position: relative;
-    right: 100px;
+    right: 90px;
 }
 .image{
     width: 200px;
@@ -113,21 +155,15 @@ h4{
     justify-self: center;
    
 }
-.aligne{
-    text-align: center;
-}
+
 
 }
 
 /* pc */
 @media (min-width:800px){
     body{
-background-color: #8d1398;
+background-color: #520075;
 
-}
-h3{
-display: flex;
-justify-content: center;
 }
 
 .pes{
@@ -161,8 +197,16 @@ justify-content: center;
    
 }
 .aligne{
+    align-content:space-between ;
     text-align: center;
+    gap: 20px;
+    padding:0px 0px 70px ;
 }
+h4{ display: inline-block;
+    position: relative;
+    right: 200px;
+}
+
 
 }
 
