@@ -58,7 +58,6 @@ label{
     align-items:center ;
 }
 .img-2{
-     position: relative;
     left: 150px;
     top: 1px;
     width: 120px;
@@ -66,22 +65,20 @@ label{
     
 }
 .img-1{
-      position: relative;
     width: 120px;
     height: 100px;
 }
 .img-3{
-     position: relative;
     width: 120px;
     height: 100px;
 }
 .img-4{
-     position: relative;
+    
     width: 120px;
     height: 100px;
 }
 .img-5{
-     position: relative;
+    
     width: 120px;
     height: 100px;
 }
@@ -101,7 +98,7 @@ label{
     height: 90px;
 }
 .bt-1{
-    background-color: darkorchid;
+    background-color: rgb(140, 21, 200);
     border-radius:50%;
     justify-content: center;
 }
@@ -110,5 +107,44 @@ label{
     text-decoration: double;
     text-align: center;
     position: absolute;
-    
+    left: 200px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #8e5ca9;
+}
+/* sign-in */
+.formulaire{
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.titre-secondaire2{
+    height: 10%;
+    width: 100%;
+    font-family:Italianno;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: 400;
+    text-shadow: rgb(103, 4, 189) 3px 2px 1px 5px;
+    justify-content: center;
+    display: flex;
+
+}
+.form2{
+    width: fit-content;
+}
+.label-and-input2{
+     width: fit-content;
+}
+.FORR{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 5px;
+}
+.div img-2-1{
+    width: 30px;
+    height: 100px;
 }
