@@ -209,3 +209,70 @@ h2{
     justify-content: center;
     align-items: center;
 }
+
+.section-bestPlaters{
+    margin:50px 0px;
+}
+
+.section-bestPlaters > div > div > span{
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-bestPlaters > div{
+    display: flex;
+    gap:25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-bestPlaters > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #999999;
+    padding: 40px;
+    border-radius: 25px;
+}
+.section-bestPlaters > div > div > div{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.section-bestPlaters > div > div > div img{
+    border-radius: 50px;
+}
+
+
+.section-reviwes{
+    margin:50px 0;
+}
+
+.section-reviwes > div > div > span{
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-reviwes > div{
+    display: flex;
+    gap:25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-reviwes > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #999999;
+    padding: 40px;
+    border-radius: 25px;
+}
+.section-reviwes > div > div > div{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.section-reviwes > div > div > div img{
+    width: 300px;
+}
