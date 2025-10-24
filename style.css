@@ -74,6 +74,7 @@ nav ul{
 }
 
 footer{
+    padding: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
@@ -96,10 +97,12 @@ footer{
     margin:auto;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .newsletter-input {
     flex-grow: 1;
+    max-height: 50px;
     min-width: 250px;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -275,4 +278,34 @@ h2{
 }
 .section-reviwes > div > div > div img{
     width: 300px;
+}
+
+@media(max-width: 900px){
+    .hero-img{
+        order:-1;
+    }
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        margin:50px;
+    }
+    .most-popular{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap:25px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo-dis "
+            "newsletter"
+            "navigation "
+            "contact-us";
+    }
 }
