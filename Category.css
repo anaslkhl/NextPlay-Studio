@@ -1,3 +1,5 @@
+
+
 body {
   height: 100vh;
 }
@@ -14,6 +16,9 @@ header {
   justify-content: space-between;
   position: relative;
   
+}
+header>div{
+  display: none;
 }
 header a{
   text-decoration: none;
@@ -276,4 +281,52 @@ main {
   transition: all;
   transition-duration: 1s;
   transform: scale(1.02);
+}
+@media (min-width:900px) {
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
+  header a{
+    display: none;
+  }
+  header>div>ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+  header>div{
+    display: flex;
+  }
+  #Category{
+    color: rgb(240, 23, 171);
+  }
+  .newest{
+    display: flex;
+    
+  }
+  .card{
+    width:300px;
+
+  }
+  .popularity{
+    display: flex;
+  }
+  .card-popular{
+    width:300px;
+  }
+  
+  .tout{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    margin-top: -40px;
+  }
+  .button-category{
+    position: relative;
+  }
 }
