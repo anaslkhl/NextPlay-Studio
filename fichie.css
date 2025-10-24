@@ -1,5 +1,4 @@
 
-
 .image{
     border-radius: 20px;
 box-shadow: 10px 10px 5px 1px;
@@ -13,18 +12,64 @@ cursor: pointer;
 p{
     color: wheat;
 }
-/* main>div>h3 :hover{
-background-color: #aa08d7;
-color: black;
-cursor: pointer;
-} */
+.logo{
+    width: 60px;
+    height: 40px;
+    padding: 3px;
+    
+    background-color: black;
+    border-radius: 40px;
+}
+header>nav{
+display: flex;
+justify-content: space-between;
+    background-color: #5C1396;
+    font-size: 15px;
+position: relative;
+top: -10px;
+}
+nav>ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: wheat;
+}
 
+
+nav >ul>li:nth-child(2){
+    color: #FF00D9;
+}
+header{
+    position: sticky;
+    top: 10px;
+}
 
 /* phone */
 @media (max-width:667px){
     body{
 background-color: #520075;
+margin-top: 0Px;
 }
+
+header>nav{
+display: flex;
+justify-content: space-between;
+    padding: 4px;
+    background-color: #5C1396;
+    font-size: 10px;
+    
+
+}
+
+.logo{
+    width: 30px;
+    height: 20px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+
 h4{
     display: inline-block;
 }
@@ -48,28 +93,14 @@ image{
 
 }
 .title{
-    /* width: 50%; */
-    /* text-align: center; */
+    
     color: white;
     margin-bottom:60px ;
     padding: 10px;
     display: flex;
     justify-self: center;
     border-radius: 20px;
-    /* background: #b3adad;
-    background: linear-gradient(
-      90deg,
-      rgb(21, 21, 21) 0%,
-      rgb(105, 104, 104) 25%,
-      rgb(129, 128, 128) 40%,
-      rgba(255, 255, 255, 1) 50%,
-      rgb(21, 21, 21) 60%,
-      rgb(105, 104, 104) 75%,
-      rgb(129, 128, 128) 100%
-
-    );
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
+   
    
 }
 .aligne{
@@ -83,12 +114,32 @@ cursor: pointer;
 
 }
 
-
 /* tablet */
+/*  
 @media (min-width:668px) and (max-width:800px){
     body{
 background-color: #520075;
 }
+header>nav{
+display: flex;
+justify-content: space-between;
+    background-color: #5C1396;
+    font-size: 15px;
+    padding-right: 15px;
+position: relative;
+
+
+}
+.logo{
+    width: 30px;
+    height: 20px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+    
+}
+
+
 
 #aside-free{
     position: relative;
@@ -101,12 +152,11 @@ background-color: #520075;
     position: relative;
             border-radius: 20px;
 
-    /* top: 0px; */
 }
 .fort{
     width: 225px;
     height: 220px;
-            border-radius: 20px;
+    border-radius: 20px;
 
 
 }
@@ -133,8 +183,6 @@ background-color: #520075;
 }
 h4{
     display: inline-block;
-    position: relative;
-    right: 90px;
 }
 .image{
     width: 200px;
@@ -146,8 +194,6 @@ h4{
 }
 
 .title{
-    /* width: 50%; */
-    /* text-align: center; */
     color: white;
     margin-bottom:60px ;
 
@@ -157,13 +203,17 @@ h4{
 }
 
 
-}
+} */
 
 /* pc */
-@media (min-width:800px){
+@media (min-width:668px){
     body{
 background-color: #520075;
 
+}
+nav{
+    position: relative;
+    top: -10px;
 }
 
 .pes{
@@ -188,8 +238,6 @@ background-color: #520075;
     flex-direction: row-reverse;
 }
 .title{
-    /* width: 50%; */
-    /* text-align: center; */
     color: white;
     margin-bottom:60px ;
     display: flex;
@@ -203,12 +251,14 @@ background-color: #520075;
     padding:0px 0px 70px ;
 }
 h4{ display: inline-block;
-    position: relative;
-    right: 200px;
+    /* position: relative; */
+    /* right: 200px; */
+}
 }
 
 
-}
+
+
 
 
 
