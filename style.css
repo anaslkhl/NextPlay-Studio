@@ -30,7 +30,7 @@ body {
     height: 200px;
     font-size: 35px;
     font-style: italic;
-    color: rgba(240, 238, 243, 0.644);
+    color: rgba(240, 238, 243, 0.795);
     font-family: monospace;
     background: var(--backround-gradea1);
 
@@ -73,7 +73,7 @@ body {
             width: 75%;
             position: relative;
             bottom: 6px;
-            color: rgb(104, 104, 104);
+            color: rgba(180, 180, 180, 0.74);
         }
 
         #nameofgame {
