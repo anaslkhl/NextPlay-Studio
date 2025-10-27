@@ -1,0 +1,332 @@
+
+
+body {
+  height: 100vh;
+}
+* {
+  font-family: "Share Tech Mono";
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #5C1396;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  
+}
+header>div{
+  display: none;
+}
+header a{
+  text-decoration: none;
+  font-size: xx-large;
+  color:#dfdfdf;
+  position: absolute;
+  top: 19px;
+  right: 3px;
+
+}
+header img{
+  position: absolute;
+  height: 30px;
+  top: 25px;
+  left: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0px;
+}
+
+.hero-section {
+  background: #5c1396;
+  background: linear-gradient(
+    90deg,
+    rgba(92, 19, 150, 1) 0%,
+    rgba(77, 16, 125, 1) 50%,
+    rgba(29, 6, 48, 1) 100%
+  );
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+.hero-section h1 {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 102, 102, 1) 28%,
+    rgba(255, 247, 247, 1) 50%,
+    rgba(27, 27, 27, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 9dvh;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.filtration {
+  background-color: #5c1396;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.top{
+  display: flex;
+  gap: 60px;
+}
+.top a {
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  height: 30px;
+  width: 100%;
+  color: white;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  transition: transform;
+  margin-top: 20px;
+  gap: 60px;
+  padding: 0 25px;
+  
+}
+.bottum{
+  display: flex;
+  gap: 10px;
+  
+}
+.bottum a {
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  height: 30px;
+  width: 110px;
+  color: white;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  transition: transform;
+  margin-bottom: 20px;
+  
+  
+}
+.filtration a:hover {
+  color: #1e1e1e;
+  background-color: white;
+  transform: scale(1.05);
+  transition: 1s;
+  cursor: pointer;
+}
+.button-category{
+  background-color: #5c1396;
+  width: 100%;
+}
+
+.button-category button {
+  text-align: center;
+  display: inline;
+  height: 30px;
+  width: 110px;
+  color: white;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  transition: transform;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.newest {
+  background-color: #5c1396;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.card {
+  background: #dfdfdf;
+  background: linear-gradient(
+    358deg,
+    rgba(223, 223, 223, 1) 0%,
+    rgba(80, 65, 65, 1) 50%
+  );
+  width: 60%;
+  height: 50vh;
+  margin: 20px auto;
+  border-radius: 15px;
+  transition: all;
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 15px;
+  transform: scale(1.05);
+  border: 3px solid rgb(10, 243, 255);
+}
+.card img {
+  border-radius: 15px 15px 0 0;
+}
+.seemore {
+  border: 1px solid #5c1396;
+  text-decoration: none;
+  color: white;
+  background-color: #5c1396;
+  border-radius: 6px;
+}
+.popularity {
+  padding-top: 100px;
+  background-color: #5c1396;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.card-popular {
+  background: #dfdfdf;
+  background: linear-gradient(
+    358deg,
+    rgba(223, 223, 223, 1) 0%,
+    rgba(80, 65, 65, 1) 50%
+  );
+  width: 60%;
+  height: 50vh;
+  margin: 20px auto;
+  border-radius: 15px;
+  transition: all;
+  transition: 0.3s;
+}
+.card-popular:hover {
+  box-shadow: 0 0 15px;
+  transform: scale(1.05);
+  border: 3px solid rgb(10, 243, 255);
+}
+.card-popular img {
+  border-radius: 15px 15px 0 0;
+}
+.card,
+.card-popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container-popular p:nth-child(2){
+  color: goldenrod;
+}
+.container p:nth-child(2){
+  color: goldenrod;
+}
+#nav-elements {
+  
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  visibility: hidden;
+  background-color: rgba(52, 50, 50, 0.96);
+  z-index: 12;
+}
+#nav-elements li{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  padding: 30px;
+  margin: 30px;
+  transition: all;
+}
+#nav-elements ul li:hover{
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: larger;
+  text-decoration: underline;
+  color: #00b3ff;
+  
+}
+.closebutton{
+  position: absolute;
+  font-size: 50px;
+}
+
+#nav-elements:target {
+  visibility: visible;
+  opacity: 1;
+  transition: all;
+  transition-duration: 1s;
+  transform: scale(1.02);
+}
+@media (min-width:900px) {
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
+  header a{
+    display: none;
+  }
+  header>div>ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+  header>div{
+    display: flex;
+  }
+  #Category{
+    color: rgb(240, 23, 171);
+  }
+  .newest{
+    display: flex;
+    
+  }
+  .card{
+    width:300px;
+
+  }
+  .popularity{
+    display: flex;
+  }
+  .card-popular{
+    width:300px;
+  }
+  
+  .tout{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    margin-top: -40px;
+  }
+  .button-category{
+    position: relative;
+  }
+}
