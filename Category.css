@@ -74,7 +74,7 @@ main {
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-/* The typing effect */
+
 @keyframes typing {
   from {
     width: 0;
@@ -311,6 +311,8 @@ main {
   }
   .card{
     width:300px;
+    margin-bottom: 50px;
+    
 
   }
   .popularity{
@@ -318,6 +320,11 @@ main {
   }
   .card-popular{
     width:300px;
+    margin-bottom: 50px;
+    
+  }
+  .newest h2{
+    text-align: center;
   }
   
   .tout{
