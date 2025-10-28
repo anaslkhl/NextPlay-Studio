@@ -1,29 +1,37 @@
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-nav{
+nav {
     display: flex;
     padding: 50px;
     justify-content: space-between;
     z-index: 1;
 }
-nav ul{
-    display:flex;
+
+nav ul {
+    display: flex;
     list-style: none;
-    gap:1em ;
+    gap: 1em;
     font-size: 2em;
-    color:white;
+    color: white;
+}
+.list{
+    
 }
 
-.logo{
+.test {
+    color: white;
+}
+
+.logo {
     width: 150px;
 }
 
-.hero{
-    top:0;
+.hero {
+    top: 0;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -35,32 +43,32 @@ nav ul{
     justify-content: center;
 }
 
-.hero-img{
+.hero-img {
     display: flex;
     justify-content: center;
 }
 
-.hero-img img{
-    width: 70%;    
+.hero-img img {
+    width: 70%;
 }
 
-.hero-headline{
+.hero-headline {
     width: 50%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.hero-headline h1{
+.hero-headline h1 {
     font-size: 4em;
-    color:white;
+    color: white;
 }
 
-.hero-headline p{
+.hero-headline p {
     font-size: 3em;
-    color:white;
+    color: white;
 }
 
 .cta-btn {
@@ -73,10 +81,10 @@ nav ul{
     font-weight: 700;
 }
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "logo-dis newsletter newsletter"
         "logo-dis navigation contact-us";
     background-color: rgb(0, 0, 0);
@@ -93,7 +101,7 @@ footer{
     display: flex;
     gap: 1rem;
     max-width: 600px;
-    margin:auto;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -116,7 +124,7 @@ footer{
     text-align: center;
 }
 
-.logo-dis{
+.logo-dis {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,23 +133,24 @@ footer{
     height: 100%;
 }
 
-.logo-dis p{
+.logo-dis p {
     font-size: 2rem;
-    width:75%;
+    width: 75%;
     text-align: center;
 }
-.container-footer{
+
+.container-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container-footer h2{
+.container-footer h2 {
     grid-area: title;
     font-size: 4rem;
 }
 
-.container-footer ul{
+.container-footer ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -151,7 +160,7 @@ footer{
     padding: 20px;
 }
 
-.container-footer li{
+.container-footer li {
     margin: 0 90px;
     font-size: 2rem;
 }
@@ -160,73 +169,80 @@ footer{
 
 /* main */
 
-h2{
+h2 {
     font-size: 60px;
     text-align: center;
 }
 
-.section-lastGames{
+.section-lastGames {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 
-.contaner-lastGames h3{
-    font-size:50px;
+.contaner-lastGames h3 {
+    font-size: 50px;
 }
-.contaner-lastGames{
+
+.contaner-lastGames {
     display: flex;
     flex-wrap: wrap;
-    gap:25px;
+    gap: 25px;
     justify-content: center;
 }
 
-.most-popular{
+.most-popular {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 1fr;
     max-height: 50%;
     justify-items: center;
 }
-.most-popular > div , .last-games> div{
+
+.most-popular>div,
+.last-games>div {
     display: flex;
     flex-direction: column;
     margin: 0 25px;
 }
-.most-popular > div > span, .last-games > div > span{
+
+.most-popular>div>span,
+.last-games>div>span {
     font-size: 50px;
     text-align: center;
 }
-.most-popular> h3{
-    grid-column-start: 1 ;
+
+.most-popular>h3 {
+    grid-column-start: 1;
     grid-column-end: 3;
 }
-.last-games{
+
+.last-games {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.section-bestPlaters{
-    margin:50px 0px;
+.section-bestPlaters {
+    margin: 50px 0px;
 }
 
-.section-bestPlaters > div > div > span{
+.section-bestPlaters>div>div>span {
     font-size: 50px;
     text-align: center;
 }
 
-.section-bestPlaters > div{
+.section-bestPlaters>div {
     display: flex;
-    gap:25px;
+    gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.section-bestPlaters > div > div{
+.section-bestPlaters>div>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,33 +250,35 @@ h2{
     padding: 40px;
     border-radius: 25px;
 }
-.section-bestPlaters > div > div > div{
+
+.section-bestPlaters>div>div>div {
     display: flex;
     align-items: center;
     font-size: 25px;
 }
-.section-bestPlaters > div > div > div img{
+
+.section-bestPlaters>div>div>div img {
     border-radius: 50px;
 }
 
 
-.section-reviwes{
-    margin:50px 0;
+.section-reviwes {
+    margin: 50px 0;
 }
 
-.section-reviwes > div > div > span{
+.section-reviwes>div>div>span {
     font-size: 50px;
     text-align: center;
 }
 
-.section-reviwes > div{
+.section-reviwes>div {
     display: flex;
-    gap:25px;
+    gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.section-reviwes > div > div{
+.section-reviwes>div>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,14 +286,17 @@ h2{
     padding: 40px;
     border-radius: 25px;
 }
-.section-reviwes > div > div > div{
+
+.section-reviwes>div>div>div {
     display: flex;
     align-items: center;
     font-size: 25px;
 }
-.section-reviwes > div > div > div img{
+
+.section-reviwes>div>div>div img {
     width: 300px;
 }
+
 body {
     max-width: 667px;
 }
@@ -297,8 +318,13 @@ body {
     align-items: center;
     gap: 15px;
     list-style: none;
+    z-index: 1;
 
 
+}
+.navlist a{
+    color: #d2ced496;
+    
 }
 
 .nameofpage {
@@ -306,81 +332,87 @@ body {
     justify-content: center;
     align-items: center;
     height: 200px;
-    font-size: 35px;
+    font-size: 70px;
     font-style: italic;
     color: rgba(240, 238, 243, 0.795);
-    font-family: monospace;
+    width: 100%;
+    height: 30vh;
     background: var(--backround-gradea1);
+    font-family: monospace;
+    text-decoration: underline;
+    text-shadow: #7e63b0 4px 3px;
 
-}.image {
-                width: 200px;
-                height: 180px;
-            }
+}
 
-        .games {
-            display: flex;
-            width: 100%;
-            height: 150px;
+.image {
+    width: 200px;
+    height: 180px;
+}
 
-        }
+.games {
+    display: flex;
+    width: 100%;
+    height: 150px;
 
-        .games:hover {
-            background-color: #d932fe25;
-            font-size: 15px;
-        }
+}
 
-
-        #image {
-            display: flex;
-            width: 110px;
-            height: 120px;
-            box-shadow: 2px -1px 5px #D932FE
-        }
-
-        .games .image-game {
-            display: flex;
-            align-items: center;
-
-        }
-
-        .games .game-info {
-            display: flex;
-            padding-left: 15px;
-            flex-direction: column;
-            justify-content: center;
-            width: 75%;
-            position: relative;
-            bottom: 6px;
-            color: rgba(180, 180, 180, 0.74);
-        }
-
-        #nameofgame {
-            font-size: x-large;
-            font-style: italic;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            text-decoration: overline;
-        }
+.games:hover {
+    background-color: #d932fe25;
+    font-size: 15px;
+}
 
 
+#image {
+    display: flex;
+    width: 110px;
+    height: 120px;
+    box-shadow: 2px -1px 5px #D932FE
+}
 
-        @media screen and (min-width: 1024px) {
-            body {
-                font-size: 18px;
-                padding: 40px;
-                max-width: 100VW;
-            }
+.games .image-game {
+    display: flex;
+    align-items: center;
 
-            .games {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
+}
 
-            .flex-row {
-                display: flex;
-                justify-content: space-between;
-            }
+.games .game-info {
+    display: flex;
+    padding-left: 15px;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    position: relative;
+    bottom: 6px;
+    color: rgba(180, 180, 180, 0.74);
+}
 
-            .flex-row>div {
-                width: 48%;
-            }
-        }
+#nameofgame {
+    font-size: x-large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: overline;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+        padding: 40px;
+        max-width: 100VW;
+    }
+
+    .games {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .flex-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-row>div {
+        width: 48%;
+    }
+}
